@@ -22,7 +22,8 @@
         } else if (метод bool <это скобка закрывающая?>) {
  (тогда удаляем  и проверяем 'парность\непарность'
  только-что удалённой скобки с текущей )
-            if (deqOfBrackets.isEmpty() || ! метод bool <скобки корректно согласованы?(deqOfBrackets.pop(), bracket)>) {
+            if ( deqOfBrackets.isEmpty() ||
+                 ! метод bool <скобки корректно согласованы?(deqOfBrackets.pop(), bracket)>) {
                 return false;
             }
         }
@@ -37,7 +38,7 @@
     2. упразднение методов isOpen is isClose
     в т.ч. замена основной конструкции IF  на  SWITCH
  (оставлен только метод bool <скобки являются парой?>(char open, char close))
-    3.  добавление обработки скобок <>
+    3.  добавление обработки скобок "<", ">"
 
  */
 package practice;
