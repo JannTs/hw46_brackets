@@ -29,6 +29,16 @@
     }
         return deqOfBrackets.isEmpty();
     }
+
+ последняя реализация :
+    1. отказ от
+        if (brackets.length % 2 != 0)
+        return false;
+    2. упразднение методов isOpen is isClose
+    в т.ч. замена основной конструкции IF  на  SWITCH
+ (оставлен только метод bool <скобки являются парой?>(char open, char close))
+    3.  добавление обработки скобок <>
+
  */
 package practice;
 import java.util.ArrayDeque;
